@@ -1,0 +1,903 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0812.0353                               -->
+<workbook original-version='18.1' source-build='2022.2.1 (20222.22.0812.0353)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='us2022q2a' inline='true' name='federated.0cit0d30jtqiyq13ne15x0cjxvxd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='us2022q2a' name='textscan.0xuas0v0wscuzb1gez6j70308p1w'>
+            <connection class='textscan' directory='C:/Users/quiqu/Documents/Tareas/Tec/7° Semestre/Estadística' filename='us2022q2a.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0xuas0v0wscuzb1gez6j70308p1w' name='us2022q2a.csv' table='[us2022q2a#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='firm' ordinal='0' />
+            <column datatype='string' name='q' ordinal='1' />
+            <column datatype='integer' name='revenue' ordinal='2' />
+            <column datatype='integer' name='cogs' ordinal='3' />
+            <column datatype='integer' name='sgae' ordinal='4' />
+            <column datatype='integer' name='otheropexp' ordinal='5' />
+            <column datatype='integer' name='extraincome' ordinal='6' />
+            <column datatype='integer' name='finexp' ordinal='7' />
+            <column datatype='integer' name='incometax' ordinal='8' />
+            <column datatype='integer' name='totalassets' ordinal='9' />
+            <column datatype='integer' name='totalliabilities' ordinal='10' />
+            <column datatype='integer' name='shortdebt' ordinal='11' />
+            <column datatype='integer' name='longdebt' ordinal='12' />
+            <column datatype='integer' name='stockholderequity' ordinal='13' />
+            <column datatype='real' name='adjprice' ordinal='14' />
+            <column datatype='real' name='originalprice' ordinal='15' />
+            <column datatype='real' name='sharesoutstanding' ordinal='16' />
+            <column datatype='integer' name='fiscalmonth' ordinal='17' />
+            <column datatype='integer' name='year' ordinal='18' />
+            <column datatype='integer' name='cto' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0xuas0v0wscuzb1gez6j70308p1w' name='us2022q2a.csv' table='[us2022q2a#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+              <column datatype='string' name='firm' ordinal='0' />
+              <column datatype='string' name='q' ordinal='1' />
+              <column datatype='integer' name='revenue' ordinal='2' />
+              <column datatype='integer' name='cogs' ordinal='3' />
+              <column datatype='integer' name='sgae' ordinal='4' />
+              <column datatype='integer' name='otheropexp' ordinal='5' />
+              <column datatype='integer' name='extraincome' ordinal='6' />
+              <column datatype='integer' name='finexp' ordinal='7' />
+              <column datatype='integer' name='incometax' ordinal='8' />
+              <column datatype='integer' name='totalassets' ordinal='9' />
+              <column datatype='integer' name='totalliabilities' ordinal='10' />
+              <column datatype='integer' name='shortdebt' ordinal='11' />
+              <column datatype='integer' name='longdebt' ordinal='12' />
+              <column datatype='integer' name='stockholderequity' ordinal='13' />
+              <column datatype='real' name='adjprice' ordinal='14' />
+              <column datatype='real' name='originalprice' ordinal='15' />
+              <column datatype='real' name='sharesoutstanding' ordinal='16' />
+              <column datatype='integer' name='fiscalmonth' ordinal='17' />
+              <column datatype='integer' name='year' ordinal='18' />
+              <column datatype='integer' name='cto' ordinal='19' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0xuas0v0wscuzb1gez6j70308p1w' name='usfirms2022.csv' table='[usfirms2022#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+              <column datatype='string' name='Ticker' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='integer' name='N' ordinal='2' />
+              <column datatype='string' name='Class' ordinal='3' />
+              <column datatype='string' name='Country_of Origin' ordinal='4' />
+              <column datatype='string' name='Type of Asset' ordinal='5' />
+              <column datatype='string' name='Sector NAICS_level 1' ordinal='6' />
+              <column datatype='string' name='Exchange / Src' ordinal='7' />
+              <column datatype='string' name='Sector_Economatica' ordinal='8' />
+              <column datatype='string' name='Sector NAICS_last available' ordinal='9' />
+              <column datatype='string' name='partind' ordinal='10' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[firm]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>firm</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>q</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[q]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>q</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cogs]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>cogs</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sgae</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sgae]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>sgae</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>otheropexp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[otheropexp]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>otheropexp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extraincome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extraincome]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>extraincome</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>finexp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[finexp]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>finexp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incometax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incometax]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>incometax</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalassets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalassets]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>totalassets</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalliabilities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalliabilities]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>totalliabilities</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shortdebt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shortdebt]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>shortdebt</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longdebt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[longdebt]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>longdebt</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stockholderequity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stockholderequity]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>stockholderequity</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adjprice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[adjprice]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>adjprice</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>originalprice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[originalprice]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>originalprice</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sharesoutstanding</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sharesoutstanding]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>sharesoutstanding</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fiscalmonth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fiscalmonth]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>fiscalmonth</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cto]</local-name>
+            <parent-name>[us2022q2a.csv]</parent-name>
+            <remote-alias>cto</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticker]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Ticker</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[N]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>N</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Class]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Class</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country_of Origin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country_of Origin]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Country_of Origin</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Asset</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of Asset]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Type of Asset</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector NAICS_level 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sector NAICS_level 1]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Sector NAICS_level 1</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exchange / Src</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exchange / Src]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Exchange / Src</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector_Economatica</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sector_Economatica]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Sector_Economatica</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector NAICS_last available</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sector NAICS_last available]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>Sector NAICS_last available</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>partind</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[partind]</local-name>
+            <parent-name>[usfirms2022.csv]</parent-name>
+            <remote-alias>partind</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country of Origin' datatype='string' name='[Country_of Origin]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Sector NAICS last available' datatype='string' name='[Sector NAICS_last available]' role='dimension' type='nominal' />
+      <column caption='Sector NAICS level 1' datatype='string' name='[Sector NAICS_level 1]' role='dimension' type='nominal' />
+      <column caption='Sector Economatica' datatype='string' name='[Sector_Economatica]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='us2022q2a.csv' datatype='table' name='[__tableau_internal_object_id__].[us2022q2a.csv_CDC755C6613342009C422A952BE1453A]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='usfirms2022.csv' datatype='table' name='[__tableau_internal_object_id__].[usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172]' role='measure' type='quantitative' />
+      <column caption='Adjprice' datatype='real' name='[adjprice]' role='measure' type='quantitative' />
+      <column caption='Cogs' datatype='integer' name='[cogs]' role='measure' type='quantitative' />
+      <column caption='Cto' datatype='integer' name='[cto]' role='measure' type='quantitative' />
+      <column caption='Extraincome' datatype='integer' name='[extraincome]' role='measure' type='quantitative' />
+      <column caption='Finexp' datatype='integer' name='[finexp]' role='measure' type='quantitative' />
+      <column caption='Firm' datatype='string' name='[firm]' role='dimension' type='nominal' />
+      <column caption='Fiscalmonth' datatype='integer' name='[fiscalmonth]' role='measure' type='quantitative' />
+      <column caption='Incometax' datatype='integer' name='[incometax]' role='measure' type='quantitative' />
+      <column caption='Longdebt' datatype='integer' name='[longdebt]' role='measure' type='quantitative' />
+      <column caption='Originalprice' datatype='real' name='[originalprice]' role='measure' type='quantitative' />
+      <column caption='Otheropexp' datatype='integer' name='[otheropexp]' role='measure' type='quantitative' />
+      <column caption='Partind' datatype='string' name='[partind]' role='dimension' type='nominal' />
+      <column caption='Q' datatype='string' name='[q]' role='dimension' type='nominal' />
+      <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Sgae' datatype='integer' name='[sgae]' role='measure' type='quantitative' />
+      <column caption='Sharesoutstanding' datatype='real' name='[sharesoutstanding]' role='measure' type='quantitative' />
+      <column caption='Shortdebt' datatype='integer' name='[shortdebt]' role='measure' type='quantitative' />
+      <column caption='Stockholderequity' datatype='integer' name='[stockholderequity]' role='measure' type='quantitative' />
+      <column caption='Totalassets' datatype='integer' name='[totalassets]' role='measure' type='quantitative' />
+      <column caption='Totalliabilities' datatype='integer' name='[totalliabilities]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='us2022q2a.csv' id='us2022q2a.csv_CDC755C6613342009C422A952BE1453A'>
+            <properties context=''>
+              <relation connection='textscan.0xuas0v0wscuzb1gez6j70308p1w' name='us2022q2a.csv' table='[us2022q2a#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='string' name='firm' ordinal='0' />
+                  <column datatype='string' name='q' ordinal='1' />
+                  <column datatype='integer' name='revenue' ordinal='2' />
+                  <column datatype='integer' name='cogs' ordinal='3' />
+                  <column datatype='integer' name='sgae' ordinal='4' />
+                  <column datatype='integer' name='otheropexp' ordinal='5' />
+                  <column datatype='integer' name='extraincome' ordinal='6' />
+                  <column datatype='integer' name='finexp' ordinal='7' />
+                  <column datatype='integer' name='incometax' ordinal='8' />
+                  <column datatype='integer' name='totalassets' ordinal='9' />
+                  <column datatype='integer' name='totalliabilities' ordinal='10' />
+                  <column datatype='integer' name='shortdebt' ordinal='11' />
+                  <column datatype='integer' name='longdebt' ordinal='12' />
+                  <column datatype='integer' name='stockholderequity' ordinal='13' />
+                  <column datatype='real' name='adjprice' ordinal='14' />
+                  <column datatype='real' name='originalprice' ordinal='15' />
+                  <column datatype='real' name='sharesoutstanding' ordinal='16' />
+                  <column datatype='integer' name='fiscalmonth' ordinal='17' />
+                  <column datatype='integer' name='year' ordinal='18' />
+                  <column datatype='integer' name='cto' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='usfirms2022.csv' id='usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172'>
+            <properties context=''>
+              <relation connection='textscan.0xuas0v0wscuzb1gez6j70308p1w' name='usfirms2022.csv' table='[usfirms2022#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='string' name='Ticker' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='integer' name='N' ordinal='2' />
+                  <column datatype='string' name='Class' ordinal='3' />
+                  <column datatype='string' name='Country_of Origin' ordinal='4' />
+                  <column datatype='string' name='Type of Asset' ordinal='5' />
+                  <column datatype='string' name='Sector NAICS_level 1' ordinal='6' />
+                  <column datatype='string' name='Exchange / Src' ordinal='7' />
+                  <column datatype='string' name='Sector_Economatica' ordinal='8' />
+                  <column datatype='string' name='Sector NAICS_last available' ordinal='9' />
+                  <column datatype='string' name='partind' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[firm]' />
+              <expression op='[Ticker]' />
+            </expression>
+            <first-end-point object-id='us2022q2a.csv_CDC755C6613342009C422A952BE1453A' />
+            <second-end-point object-id='usfirms2022.csv_B9C20EB5D5FE4A9DB4100F427377E172' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us2022q2a' name='federated.0cit0d30jtqiyq13ne15x0cjxvxd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cit0d30jtqiyq13ne15x0cjxvxd'>
+            <column caption='Sector NAICS level 1' datatype='string' name='[Sector NAICS_level 1]' role='dimension' type='nominal' />
+            <column-instance column='[Sector NAICS_level 1]' derivation='None' name='[none:Sector NAICS_level 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[sum:revenue:qk]' />
+              <color column='[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[none:Sector NAICS_level 1:nk]' />
+              <text column='[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[none:year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8A1B9B60-03B8-4ABE-8C51-EB92B5B89F0C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[none:Sector NAICS_level 1:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[none:Sector NAICS_level 1:nk]</field>
+            <field>[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[none:firm:nk]</field>
+            <field>[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[none:q:nk]</field>
+            <field>[federated.0cit0d30jtqiyq13ne15x0cjxvxd].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9831849C-36AF-4BCA-88EE-595C9D9572B3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
